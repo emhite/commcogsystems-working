@@ -1,0 +1,188 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<link type="text/css" rel="stylesheet" href="style-copy.css" />
+<link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet"> 
+<meta charset="utf-8">
+<title>Lab Photos</title>
+</head>
+
+
+<body>
+
+
+
+ <div id="top">
+    <div id="logo_cont"><a id="home" href="index.html">
+      <img id="logo" src="logo_solo-07.svg" style="height:55px;">
+      </a>
+    </div>
+	 
+<ul>
+	<li><a href="contact.html"><p class="write">Contact</p></a></li>
+	<li><a href="labphotos.html"><p class="write">Lab Photos</p></a></li>
+    <li><a href="people.html"><p class="write">People</p></a></li>
+    <li><a href="publications.html"><p class="write">Publications</p></a></li>
+    <li><a href="labnews.html"><p class="write">Lab News</p></a></li>
+    <!-- <li><a href="index.html"><p class="write">Home</p></a></li> -->
+</ul>
+
+  </div>
+	
+	<br><br><br><br><br><br>
+	<div class="page" style="font-family:'Merriweather'; font-size: 48px; font-weight: bold;">
+	
+	Lab Photos
+	
+</div>
+	<br><br>
+
+<div class="grid">
+  <div class="column">
+	<div class="capcontainer">
+    <img src="labphotos/photo1.JPG" class="capimage">
+		<div class="caption">Ryan’s farewell and beginning of the semester lunch.</div>
+	</div>    
+	  
+	<div class="capcontainer">
+    <img src="labphotos/photo4.JPG" class="capimage">
+		<div class="caption">Olivia and Ryan pose for The OSU Alumni Magazine’s coverage of research in the lab. </div>
+	</div>  
+</div>
+	
+<div class="column">
+	<div class="capcontainer">
+    <img src="labphotos/photo2.JPG" class="capimage">
+		<div class="caption">Austin presenting her work at the Hayes Forum. She won third place.</div>
+	</div>
+	
+		<div class="capcontainer">
+    <img src="labphotos/photo5.JPG" class="capimage">
+		<div class="caption">Ryan presents his research project at ICA.</div>
+	</div> 
+</div>
+	
+  <div class="column">
+    <div class="capcontainer">
+    <img src="labphotos/photo3.JPG" class="capimage">
+		<div class="caption">Dinner to celebrate the end of a massive data collection effort.
+		</div>
+	</div>
+	  
+	<div class="capcontainer">
+    <img src="labphotos/photo6.JPG" class="capimage">
+		<div class="caption">Michael reading Macbeth.</div>
+	</div> 
+  </div>
+</div>
+
+		
+<br><br><br>
+	
+	<div id="closer">
+    <table id="t02" class="table2"> 
+      <tr class="tr2">
+        <td id="blah" class="td2">Communication and Cognitive Systems Lab</td>
+        <td class="td2">Location</td>
+      </tr>
+      <tr class="tr2">
+        <td id ="two" class="td2">The Communication and Cognitive Systems Lab is a research laboratory within the School of Communication at the Ohio State University in Columbus, OH.</td>
+
+        <td id ="three" class="td2"><p class="info">Building 046</p><p class="info">242 W 18th Avenue</p><p class="info">Columbus, OH 43210</p></td>
+
+      </tr>
+
+    </table>
+	</div>
+	
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3300); // Change image every 2 seconds
+}
+</script>
+
+
+
+<!--<script>
+
+var slideIndex = 1;
+
+showSlides(slideIndex);
+
+
+
+// Next/previous controls
+
+function plusSlides(n) {
+
+  showSlides(slideIndex += n);
+
+}
+
+
+
+// Thumbnail image controls
+
+function currentSlide(n) {
+
+  showSlides(slideIndex = n);
+
+}
+
+
+
+function showSlides(n) {
+
+  var i;
+
+  var slides = document.getElementsByClassName("mySlides");
+
+  var dots = document.getElementsByClassName("dot");
+
+  if (n > slides.length) {slideIndex = 1} 
+
+  if (n < 1) {slideIndex = slides.length}
+
+  for (i = 0; i < slides.length; i++) {
+
+      slides[i].style.display = "none"; 
+
+  }
+
+  for (i = 0; i < dots.length; i++) {
+
+      dots[i].className = dots[i].className.replace(" active", "");
+
+  }
+
+  slides[slideIndex-1].style.display = "block"; 
+
+  dots[slideIndex-1].className += " active";
+
+}
+
+</script> -->
+
+
+
+
+
+</body>
+</html>
